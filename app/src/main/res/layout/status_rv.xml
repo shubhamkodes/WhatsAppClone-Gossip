@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/userStatusLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myStatusLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <RelativeLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:padding="6dp"
+                android:id="@+id/circular_status_image_view"
+                android:src="@drawable/aavatar" />
+
+            <com.devlomi.circularstatusview.CircularStatusView
+                android:id="@+id/circular_status_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                app:portion_color="@color/teal_700"
+                app:portion_spacing="4dp"
+                app:portion_width="4dp"
+                app:portions_count="0" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Status"
+            android:fontFamily="@font/black_ops_one"
+            android:layout_toEndOf="@id/image_layout"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvUserStatus"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserStatus"
+            android:layout_toEndOf="@id/image_layout"
+            tools:text="12:00"
+            android:layout_marginStart="15dp"
+            android:id="@+id/userStatusTime"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myStatusLayout"
+        android:background="@android:color/darker_gray"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/line"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:title="Profile"
+              android:icon="@drawable/user"
+              android:id="@+id/mItemProfile"
+            />
+        <item android:title="New Group"
+               android:id="@+id/mItemNewGroup"
+            android:icon="@drawable/group"
+            />
+        <item android:title="Starred Message"
+                android:id="@+id/mItemStarredMessage"
+            android:icon="@drawable/save_star"
+            />
+        <item android:icon="@drawable/settings"
+            android:title="Setting"
+            android:id="@+id/mItemSetting"
+            />
+
+
+
+</menu>

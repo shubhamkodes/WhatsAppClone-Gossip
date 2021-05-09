@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gossip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="enter_your_message_here">Enter your message here..</string>
+</resources>

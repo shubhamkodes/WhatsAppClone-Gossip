@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shimmer_imageview_bg"
+        android:layout_margin="10dp"
+        android:id="@+id/rv_profilePic"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:id="@+id/shimmer_name"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/rv_profilePic"
+        android:layout_toStartOf="@id/shimmer_time"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/shimmer_msg"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/rv_profilePic"
+        android:layout_below="@id/shimmer_name"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="45dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:id="@+id/shimmer_time"
+        android:background="@android:color/darker_gray"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/shimmer_line"
+        />
+
+
+
+</RelativeLayout>
